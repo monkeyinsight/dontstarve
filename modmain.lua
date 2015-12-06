@@ -1,11 +1,10 @@
 GetPlayer = GLOBAL.GetPlayer
 GetSeasonManager = GLOBAL.GetSeasonManager
 TheInput = GLOBAL.TheInput
-GLOBAL.CHEATS_ENABLED = true
 GLOBAL.require('debugkeys')
 
 KeyHandler = Class(function(self)
-	self.handler = TheInput:AddKeyHandler(function(key, down) self:OnRawKey(key, donw) end )
+	self.handler = TheInput:AddKeyHandler(function(key, down) self:OnRawKey(key, down) end )
 end)
 
 function KeyHandler:OnRawKey(key, down)
